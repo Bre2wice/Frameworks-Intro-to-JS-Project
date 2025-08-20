@@ -1,0 +1,164 @@
+/* --------------------------- */
+/* Crystal Dream Theme         */
+/* --------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #1a1f3c, #2e003e, #5a189a);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --------------------------- */
+/* Navbar Gradient             */
+/* --------------------------- */
+.bg-gradient {
+  background: linear-gradient(90deg, #6a00f4, #b5179e, #4361ee);
+}
+
+/* --------------------------- */
+/* Hero Sections               */
+/* --------------------------- */
+.hero,
+.about-hero,
+.contact-hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero h1,
+.about-hero h1,
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p,
+.about-hero p,
+.contact-hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Optional: homepage hero background image */
+.hero {
+  background: linear-gradient(rgba(67, 97, 238, 0.7), rgba(181, 23, 158, 0.7)),
+    url("images/hero.jpg") center/cover no-repeat;
+}
+
+/* About page hero gradient */
+.about-hero {
+  background: linear-gradient(135deg, #8a2be2, #ff69b4, #00bfff);
+}
+
+/* Contact page hero gradient */
+.contact-hero {
+  background: linear-gradient(135deg, #4361ee, #b5179e, #6a00f4);
+}
+
+/* --------------------------- */
+/* Cards                        */
+/* --------------------------- */
+.card {
+  transition: transform 0.3s;
+  border: none;
+  border-radius: 1rem;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* --------------------------- */
+/* Buttons                      */
+/* --------------------------- */
+.btn-primary {
+  background: linear-gradient(90deg, #4361ee, #b5179e);
+  border: none;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* --------------------------- */
+/* About Page Content           */
+/* --------------------------- */
+.about-content h2 {
+  color: #8a2be2;
+  font-weight: bold;
+}
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* --------------------------- */
+/* Forms                        */
+/* --------------------------- */
+form {
+  transition: transform 0.3s;
+}
+form:hover {
+  transform: translateY(-5px);
+}
+
+/* --------------------------- */
+/* Footer                       */
+/* --------------------------- */
+footer {
+  background: linear-gradient(90deg, #6a00f4, #b5179e, #4361ee);
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+/* --------------------------- */
+/* Main Content Layout          */
+/* --------------------------- */
+main {
+  flex: 1;
+}
+
+/* --------------------------- */
+/* Responsive Typography        */
+/* --------------------------- */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Carousel Container */
+.carousel-container {
+  max-width: 800px; /* Limits carousel width */
+  margin: 0 auto; /* Centers horizontally */
+}
+
+.carousel-inner.shadow {
+  box-shadow: none !important;
+}
+
+/* Carousel Images - show full image */
+.carousel-inner img {
+  width: 100%; /* Full width of container */
+  height: auto; /* Keep original aspect ratio */
+  max-height: 500px; /* Optional: restrict overly tall images */
+  object-fit: contain; /* Show entire image, no cropping */
+  display: block; /* Remove inline spacing */
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 12px; /* Optional: rounded corners */
+}
+
+/* Card Images */
+.card-img-top {
+  max-height: 400px; /* Adjust this value for smaller card images */
+  object-fit: cover;
+}
